@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    //using window alert
+    <script>
+        var message="Hello there";
+        alert(message);
+        function myfunction() {
+            document.getElementById("demo2").innerHTML="OMG your paragraph changed.";
+        }
+
+    </script>
+</head>
+<body>
+    <h2>My first javascript</h2>
+    <button type="button" onclick="document.getElementById('demo').innerHTML = Date()">
+        Click me to display Date and time
+    </button>
+    <p id="demo"></p>
+    <p id="demo1">Javascript can change the style of an HTML element</p>
+    <button type="button" onclick="document.getElementById('demo1').style.fontSize='35px'">Click Me!</button>
+    <p id="hide">hide me please;</p>
+    <button type="button" onclick="document.getElementById('hide').style.display='none'">hide this?</button>
+    <p id="show" style="display:none">HI THERE!</p>
+    <button type="button" onclick="document.getElementById('show').style.display='block'">Show hidden work?</button>
+    <p id="demo2">This paragraph is going to be changed.</p>
+    <button type="button" onclick="myfunction()">Try Me!</button>
+
+    <script>
+        document.getElementById("demo").innerHTML = 5+6;
+        document.write(5+6);
+        window.alert(3+4);
+    </script>
+    <p>Click the button to print the current page.</p>
+    <button onclick="window.print()">Print this page</button>
+    <h2>Javascript statements</h2>
+    <p>A javascript program is a list of statements to be executed by a computer.</p>
+    <p id="state"></p>
+    <script>
+
+        var cars=["BMW", "Volvo", "Vitz"];
+        document.getElementById("state").innerHTML= cars[0];
+    </script>
+    <h2>Javascript Functions</h2>
+    <p>This example calls a function to convert from farenheit to Celcius:</p>
+    <p id="fuc"></p>
+    <script>
+        function toCelcius(f) {
+            return (5/9) * (f-32);
+        }
+        document.getElementById("fuc").innerHTML = toCelcius(77);
+    </script>
+    <p>CLICK THE BUTTON TO DISPLAY THE TIME</p>
+    <button onclick="this.innerHTML=Date()">The time is?</button>
+    <p id="dem"></p>
+    <button onclick="document.getElementById('dem').innerHTML=Date()">The time is?</button>
+    <button onclick="displayDate()">The time is?</button>
+    
+
+</body>
+</html>

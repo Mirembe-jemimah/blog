@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+   
+    
+</head>
+<body class="#5e35b1 deep-purple darken-1">
+    <div class="container">
+        <h3 class="page-header center white-text">Blog</h3>
+        <button class= "btn btn-waves" onclick="alert('Jaymie says hey')">Click me to say hey</button>
+    </div>
+    <script src ="assets/js/conditions.js"></script>
+    <script src = "assets/js/operators.js"></script>
+    <script src = "assets/js/index.js"></script>
+    <script src = "assets/js/functions.js"></script>
+    <script src ="assets/js/temp.js"></script>
+     <script src="./assets/js/string.js">    //external js
+
+        "use strict"
+        var firstName = "Mirembe";
+        var age = 22;
+        let lastName = "Jemimah";
+
+        // varriables using let
+        let fullName = firstName + lastName;
+        let oldSalary = 8000000;
+        let newSalary = oldSalary + 100000;
+        // contstants
+        const MONTHLY_SALARY = 100000000;
+        const SECRET_KEY = "ufhffbilefueufvbc";
+        //Redeclaring a variable with let, in another scope, or in another block, is allowed:
+        let x = 2;   // Allowed
+
+        {
+        let x = 3;   // Allowed
+        }
+
+        {
+        let x = 4;   // Allowed
+        }
+        document.getElementById("demo").innerHTML = x;
+        //With let, you cannot use a variable before it is declared.
+        try {
+        carName = "Saab";
+        let carName = "Volvo";
+        }
+        catch(err) {
+        document.getElementById("demo").innerHTML = err;
+        }
+        
+        
+    </script>
+     <p>CLICK THE BUTTON TO DISPLAY THE TIME</p>
+     <button onclick="this.innerHTML=Date()">The time is?</button>
+     <p id="dem"></p>
+     <button onclick="document.getElementById('dem').innerHTML=Date()">The time is?</button>
+     <button onclick="displayDate()">The time is?</button>
+     
+       
+
+</body>
+</html>
