@@ -57,7 +57,7 @@ let altOffice = {...codeQueenAddress}
 altOffice = {...altOffice, office: 'Nakawa', town: 'Nakawa'}
 
 const person = {
-    name: jane,
+    name: "jane",
     contact: {
         phone: "2567489789",
         email: "janedoe@server.com",
